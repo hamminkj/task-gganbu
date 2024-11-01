@@ -270,3 +270,17 @@ function App() {
             <div className="text-3xl font-bold">Daily Score</div>
             <span role="img" aria-label="squid" className="text-5xl">🦑</span>
           </div>
+          <div className="text-4xl font-extrabold mt-2">{dailyScore.score}</div>
+          <div className="text-lg mt-2">Keep on tallaging, 깐부</div>
+        </Card>
+      </div>
+    </PageContainer>
+  );
+}
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <SparkApp>
+    <App />
+  </SparkApp>
+);
