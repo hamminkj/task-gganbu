@@ -1,3 +1,115 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Task Gganbu 깐부 title */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+}
+
+/* Input fields */
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Task board */
+.task-board {
+  position: relative;
+  height: 20rem;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Task icons */
+.task-icon {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.task-icon svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.task-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Laser */
+.laser {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.laser-beam {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #ef4444;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.7);
+}
+
+/* Daily score card */
+.score-card {
+  padding: 1.5rem;
+  background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 8px;
+}
+
+.score-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.score-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* Animations */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -10,3 +122,4 @@
 .animate-pulse {
   animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
